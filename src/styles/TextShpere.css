@@ -1,0 +1,56 @@
+/* Importing google font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800;900&display=swap');
+
+.text-sphere {
+    position: relative;
+    width: 100%; /* Full width for the container */
+    min-height: 50vh; /* Ensure it maintains at least half the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tagcloud {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.0625em;
+    font-size: 3vw; /* Responsive font size based on viewport width */
+    text-align: center;
+    width: 100%; /* Ensure the tag cloud spans the full width */
+    max-width: 600px; /* Increased max width for larger screens */
+    min-width: 250px; /* Set a minimum width for smaller screens */
+}
+
+/* Style for the individual items in the tag cloud */
+.tagcloud--item {
+    color: rgb(59, 130, 246);
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for tag cloud items */
+.tagcloud--item:hover {
+    color: #ff6347;
+}
+
+/* Media query for larger screens */
+@media (min-width: 1024px) {
+    .text-sphere {
+        height: auto; /* Set auto height to allow flexibility */
+        min-height: 80vh; /* Ensure it maintains at least half the viewport height */
+        /* Optional: Add padding for better visual spacing */
+    }
+
+    .tagcloud {
+        font-size: 2.5vw; /* Adjusted font size for larger screens */
+    }
+}
+
+/* Optional: Additional styles for very large screens */
+@media (min-width: 1440px) {
+    .tagcloud {
+        font-size: 2vw; /* Further adjust for larger screens */
+    }
+}

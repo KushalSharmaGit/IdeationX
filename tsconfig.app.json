@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    // No need to set 'jsx' here again if it's already in the base config
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
